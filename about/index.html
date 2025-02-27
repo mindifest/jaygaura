@@ -82,7 +82,8 @@
 <p>Another big topic I’m interested in is how we interact with the world and each other. Can we really be happy in
     isolation, or do we need to find a way to coexist and thrive together? This opens up a whole range of questions
     about society, community, education, culture and how we aim for peace and harmony. So, the second focus will be
-    <strong><a href="/" title="World • Peace • Harmony">World • Peace • Harmony</a></strong>.</p>
+    <strong><a href="/" title="World • Peace • Harmony">World • Peace • Harmony</a></strong>.
+</p>
 
 <p>Finally, I’m an IT guy. I love tech, creating efficient systems, and making life easier through smart automation.
     Over the years, I've designed solutions that save time, cut costs, and keep projects running smoothly. I'll be
@@ -178,7 +179,12 @@
                     if (data.res === "OK") {
                         statusMessage.textContent = data.message || "Message sent!";
                         statusMessage.style.color = "green";
+
+                        // ✅ Reset Form
                         form.reset();
+                        grecaptcha.reset();  // ✅ Reset reCAPTCHA
+                        form.querySelectorAll("input, textarea").forEach(field => field.value = "");  // ✅ Extra clear
+
                     } else {
                         statusMessage.textContent = data.message || "An unknown error occurred.";
                         statusMessage.style.color = "red";
