@@ -930,4 +930,51 @@ button:disabled {
   display: block;
 }
 
+.announcement {
+  background-color: #F5F3E7; /* Light gold for spiritual warmth */
+  border: 1px solid #D4A017; /* Subtle gold border */
+  padding: 10px 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.announcement p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.announcement strong {
+  color: #2C3E50; /* Deep blue for emphasis */
+}
+
+.announcement em {
+  font-style: italic;
+}
+
+.announcement a {
+  color: #007BFF; /* Blue for clickable link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.announcement a:hover {
+  text-decoration: underline;
+  color: #0056B3; /* Darker blue on hover */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .announcement {
+    margin: 10px;
+    padding: 8px;
+  }
+  .announcement p {
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
