@@ -934,7 +934,7 @@ button:disabled {
   background-color: #F5F3E7; /* Light gold for spiritual warmth */
   border: 1px solid #D4A017; /* Subtle gold border */
   padding: 10px 15px;
-  margin: 20px auto;
+  margin: 0px auto 20px auto;
   max-width: 600px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
